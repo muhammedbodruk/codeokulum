@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Ders 7 - HTML5 Yenilikler</title>
+    <title>CSS Ders 1 - CSS'in Temel Bilgileri ve Kullanımı</title>
     <link rel="stylesheet" href="../css/bs/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/custom/style2.css" />
   </head>
@@ -47,88 +47,78 @@
     <main class="container-fluid mt-5">
       <div class="row">
         <aside class="col-md-2" id="sidebar">
-          <h3>HTML Müfredatı</h3>
+          <h3>CSS Müfredatı</h3>
           <ul class="list-group">
             <li class="list-group-item">
-              <a href="d1.html">1. HTML'in Tarihi ve Temel Bilgiler</a>
+              <a href="d1.html">1. CSS'in Temel Bilgileri ve Kullanımı</a>
             </li>
             <li class="list-group-item">
-              <a href="d2.html">2. HTML Temel Etiketler</a>
+              <a href="d2.html">2. CSS Seçiciler ve Özellikler</a>
             </li>
             <li class="list-group-item">
-              <a href="d3.html">3. HTML Listeler ve Bağlantılar</a>
+              <a href="d3.html">3. CSS Kutu Modeli</a>
             </li>
             <li class="list-group-item">
-              <a href="d4.html">4. HTML Görseller ve Medya</a>
+              <a href="d4.html">4. CSS Flexbox ve Grid Layout</a>
             </li>
             <li class="list-group-item">
-              <a href="d5.html">5. HTML Formlar</a>
-            </li>
-            <li class="list-group-item">
-              <a href="d6.html">6. HTML Tablo ve Veri Görselleştirme</a>
-            </li>
-            <li class="list-group-item">
-              <a href="d7.html">7. HTML5 Yenilikler</a>
+              <a href="d5.html">5. CSS Animasyonlar ve Geçişler</a>
             </li>
           </ul>
         </aside>
 
         <div class="col-md-10 d-flex">
           <div class="flex-grow-1">
-            <h1>HTML Ders 7: HTML5 Yenilikler</h1>
+            <h1>CSS Ders 1: CSS'in Temel Bilgileri ve Kullanımı</h1>
             <p>
-              Bu derste, HTML5 ile gelen yenilikler hakkında bilgi sahibi
-              olacaksınız.
+              Bu derste, CSS'in temel bilgileri ve kullanımını öğreneceksiniz.
             </p>
 
-            <section id="new-elements">
-              <h2>Yeni HTML5 Elementleri</h2>
+            <section id="css-basics">
+              <h2>CSS Temel Bilgileri</h2>
               <p>
-                HTML5 ile birlikte birçok yeni etiket eklenmiştir. İşte
-                bazıları:
+                CSS (Cascading Style Sheets), HTML belgelerinin görünümünü
+                biçimlendirmek için kullanılan bir dildir.
               </p>
-              <ul>
-                <li><code>&lt;article&gt;</code>: Bağımsız içerik parçası</li>
-                <li>
-                  <code>&lt;aside&gt;</code>: İçeriğin yanında yer alan, yan
-                  içerik
-                </li>
-                <li><code>&lt;footer&gt;</code>: Alt bilgi</li>
-                <li><code>&lt;header&gt;</code>: Üst bilgi</li>
-                <li><code>&lt;nav&gt;</code>: Gezinti bağlantıları</li>
-                <li><code>&lt;section&gt;</code>: İçerik bölümü</li>
-              </ul>
+              <pre><code>body {
+  background-color: lightblue;
+}</code></pre>
             </section>
 
-            <section id="form-elements">
-              <h2>Yeni Form Elementleri</h2>
+            <section id="css-in-html">
+              <h2>CSS'in HTML'e Eklenmesi</h2>
               <p>
-                HTML5 ile birlikte formlar için yeni giriş tipleri ve özellikler
-                eklenmiştir:
+                CSS, HTML'e üç şekilde eklenebilir: inline, internal ve
+                external.
               </p>
-              <ul>
-                <li><code>&lt;input type="email"&gt;</code>: Email girişi</li>
-                <li><code>&lt;input type="url"&gt;</code>: URL girişi</li>
-                <li><code>&lt;input type="number"&gt;</code>: Sayı girişi</li>
-                <li><code>&lt;input type="range"&gt;</code>: Aralık girişi</li>
-                <li><code>&lt;input type="date"&gt;</code>: Tarih girişi</li>
-              </ul>
+              <h3>Inline CSS</h3>
+              <pre><code>&lt;p style="color:blue;"&gt;Bu mavi renkte bir paragraf.&lt;/p&gt;</code></pre>
+              <h3>Internal CSS</h3>
+              <pre><code>&lt;style&gt;
+p {
+  color: blue;
+}
+&lt;/style&gt;</code></pre>
+              <h3>External CSS</h3>
+              <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
             </section>
 
-            <a href="d6.html" class="btn btn-secondary mt-3"
+            <a href="../html/d7.html" class="btn btn-secondary mt-3"
               >Önceki Derse Dön</a
             >
-            <a href="../cssders/d1.html" class="btn btn-secondary mt-3">CSS derslerine başla</a>
+            <a href="d2.html" class="btn btn-secondary mt-3"
+              >Sonraki Derse Git</a
+            >
           </div>
 
           <aside class="ml-3" id="content-sidebar">
             <h3>Ders İçeriği</h3>
             <ul class="list-group">
               <li class="list-group-item">
-                <a href="#new-elements">Yeni HTML5 Elementleri</a>
+                <a href="#css-basics">CSS Temel Bilgileri</a>
               </li>
               <li class="list-group-item">
-                <a href="#form-elements">Yeni Form Elementleri</a>
+                <a href="#css-in-html">CSS'in HTML'e Eklenmesi</a>
               </li>
             </ul>
           </aside>
