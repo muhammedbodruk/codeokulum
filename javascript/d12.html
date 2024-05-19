@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Ders 12 - Modern ES6+ Özellikleri</title>
+  <link rel="stylesheet" href="../css/bs/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/custom/style2.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Code Okulum</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Ana Sayfa</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Dersler</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Hakkında</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">İletişim</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" id="theme-toggle">Tema Değiştir</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid mt-5">
+    <div class="row">
+      <aside class="col-md-2" id="sidebar">
+        <h3>JavaScript Müfredatı</h3>
+        <ul class="list-group">
+          <li class="list-group-item"><a href="d1.html">1. JavaScript'in Tarihi ve Temel Bilgiler</a></li>
+          <li class="list-group-item"><a href="d2.html">2. JavaScript'in Siteye Eklenmesi ve Temel Kurallar</a></li>
+          <li class="list-group-item"><a href="d3.html">3. JavaScript Değişkenler ve Veri Türleri</a></li>
+          <li class="list-group-item"><a href="d4.html">4. JavaScript Operatörler ve Koşullu İfadeler</a></li>
+          <li class="list-group-item"><a href="d5.html">5. JavaScript Döngüler ve Fonksiyonlar</a></li>
+          <li class="list-group-item"><a href="d6.html">6. JavaScript Diziler ve Dizi İşlemleri</a></li>
+          <li class="list-group-item"><a href="d7.html">7. JavaScript Obje Yapısı ve JSON</a></li>
+          <li class="list-group-item"><a href="d8.html">8. JavaScript DOM Manipülasyonu</a></li>
+          <li class="list-group-item"><a href="d9.html">9. JavaScript Etkinlikler</a></li>
+          <li class="list-group-item"><a href="d10.html">10. JavaScript Hatalar ve Hata Yönetimi</a></li>
+          <li class="list-group-item"><a href="d11.html">11. JavaScript Asenkron Programlama</a></li>
+          <li class="list-group-item"><a href="d12.html">12. JavaScript Modern ES6+ Özellikleri</a></li>
+        </ul>
+      </aside>
+
+      <div class="col-md-10 d-flex">
+        <div class="flex-grow-1">
+          <h1>JavaScript Ders 12: Modern ES6+ Özellikleri</h1>
+          <p>Bu derste, JavaScript'in ES6 ve sonrası sürümlerinde tanıtılan modern özellikleri öğreneceksiniz.</p>
+
+          <section id="let-const">
+            <h2>let ve const</h2>
+            <p><code>let</code> ve <code>const</code>, ES6 ile tanıtılan yeni değişken tanımlama anahtar kelimeleridir. <code>let</code>, blok seviyesinde değişken tanımlamaya imkan tanırken, <code>const</code> değiştirilemez (sabit) değişken tanımlar:</p>
+            <pre><code>let age = 30;
+age = 31; // Geçerli
+
+const name = "John";
+// name = "Doe"; // Geçersiz, const değişkeni değiştirilemez</code></pre>
+          </section>
+
+          <section id="arrow-functions">
+            <h2>Ok Fonksiyonları (Arrow Functions)</h2>
+            <p>Ok fonksiyonları, daha kısa ve okunabilir fonksiyon tanımlamaları yapmamızı sağlar:</p>
+            <pre><code>const add = (a, b) => a + b;
+console.log(add(2, 3)); // 5</code></pre>
+          </section>
+
+          <section id="template-literals">
+            <h2>Şablon Dizeleri (Template Literals)</h2>
+            <p>Şablon dizeleri, string birleştirme işlemlerini daha kolay ve okunabilir hale getirir:</p>
+            <pre><code>let name = "John";
+let greeting = `Merhaba, ${name}!`;
+console.log(greeting); // Merhaba, John!</code></pre>
+          </section>
+
+          <section id="destructuring">
+            <h2>Destructuring</h2>
+            <p>Destructuring, dizileri ve nesneleri parçalayarak değişkenlere atama işlemini kolaylaştırır:</p>
+            <pre><code>let [a, b] = [1, 2];
+console.log(a, b); // 1 2
+
+let {name, age} = {name: "John", age: 30};
+console.log(name, age); // John 30</code></pre>
+          </section>
+
+          <section id="spread-operator">
+            <h2>Spread Operatörü</h2>
+            <p>Spread operatörü, dizileri ve nesneleri genişletmek için kullanılır:</p>
+            <pre><code>let arr = [1, 2, 3];
+let newArr = [...arr, 4, 5];
+console.log(newArr); // [1, 2, 3, 4, 5]
+
+let obj = {a: 1, b: 2};
+let newObj = {...obj, c: 3};
+console.log(newObj); // {a: 1, b: 2, c: 3}</code></pre>
+          </section>
+
+          <a href="d11.html" class="btn btn-secondary mt-3">Önceki Derse Dön</a>
+          <a href="d1.html" class="btn btn-secondary mt-3">Başa Dön</a>
+        </div>
+        
+        <aside class="ml-3" id="content-sidebar">
+          <h3>Ders İçeriği</h3>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#let-const">let ve const</a></li>
+            <li class="list-group-item"><a href="#arrow-functions">Ok Fonksiyonları (Arrow Functions)</a></li>
+            <li class="list-group-item"><a href="#template-literals">Şablon Dizeleri (Template Literals)</a></li>
+            <li class="list-group-item"><a href="#destructuring">Destructuring</a></li>
+            <li class="list-group-item"><a href="#spread-operator">Spread Operatörü</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer mt-5">
+    <div class="container">
+      <p class="text-center">© 2024 Code Okulum</p>
+    </div>
+  </footer>
+
+  <script src="../js/bs/bootstrap.min.js"></script>
+  <script src="../js/custom/script2.js"></script>
+</body>
+</html>

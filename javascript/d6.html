@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Ders 6 - Diziler ve Dizi İşlemleri</title>
+    <link rel="stylesheet" href="../css/bs/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/custom/style2.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Code Okulum</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Ana Sayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Dersler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkında</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="theme-toggle">Tema Değiştir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid mt-5">
+      <div class="row">
+        <!-- Sol Taraf: Müfredat Yönelgesi -->
+        <aside class="col-md-2" id="sidebar">
+          <h3>JavaScript Müfredatı</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="d1.html">1. JavaScript'in Tarihi ve Temel Bilgiler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d2.html"
+                >2. JavaScript'in Siteye Eklenmesi ve Temel Kurallar</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="d3.html">3. JavaScript Değişkenler ve Veri Türleri</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d4.html"
+                >4. JavaScript Operatörler ve Koşullu İfadeler</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="d5.html">5. JavaScript Döngüler ve Fonksiyonlar</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d6.html">6. JavaScript Diziler ve Dizi İşlemleri</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d7.html">7. JavaScript Obje Yapısı ve JSON</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d8.html">8. JavaScript DOM Manipülasyonu</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d9.html">9. JavaScript Etkinlikler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d10.html">10. JavaScript Hatalar ve Hata Yönetimi</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d11.html">11. JavaScript Asenkron Programlama</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d12.html">12. JavaScript Modern ES6+ Özellikleri</a>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Sağ Taraf: Ders İçeriği -->
+        <div class="col-md-10 d-flex">
+          <div class="flex-grow-1">
+            <h1>JavaScript Ders 6: Diziler ve Dizi İşlemleri</h1>
+            <p>
+              Bu derste, JavaScript'te diziler ve dizi işlemleri hakkında bilgi
+              edineceksiniz.
+            </p>
+
+            <section id="arrays">
+              <h2>JavaScript Diziler</h2>
+              <p>
+                Diziler, birden fazla veriyi tek bir değişken altında
+                saklamamıza olanak tanır. JavaScript'te diziler şu şekilde
+                tanımlanır:
+              </p>
+              <pre><code>let meyveler = ["Elma", "Muz", "Çilek"];</code></pre>
+            </section>
+
+            <section id="array-methods">
+              <h2>Dizi Metotları ve İşlevleri</h2>
+              <p>
+                JavaScript dizileri üzerinde çeşitli işlemler yapmamıza olanak
+                tanıyan birçok yerleşik metod sağlar. İşte bazı yaygın
+                kullanılan dizi metodları:
+              </p>
+              <ul>
+                <li>
+                  <code>push()</code>: Dizinin sonuna bir veya daha fazla eleman
+                  ekler.
+                </li>
+                <li><code>pop()</code>: Dizinin son elemanını kaldırır.</li>
+                <li><code>shift()</code>: Dizinin ilk elemanını kaldırır.</li>
+                <li>
+                  <code>unshift()</code>: Dizinin başına bir veya daha fazla
+                  eleman ekler.
+                </li>
+                <li>
+                  <code>splice()</code>: Belirtilen pozisyonda eleman ekler veya
+                  kaldırır.
+                </li>
+                <li>
+                  <code>slice()</code>: Belirtilen pozisyondaki elemanları yeni
+                  bir dizi olarak döner.
+                </li>
+              </ul>
+            </section>
+
+            <section id="array-operations">
+              <h2>Dizilerle İşlemler</h2>
+              <p>
+                Dizilerle döngüler kullanarak çeşitli işlemler yapabiliriz.
+                Örneğin:
+              </p>
+              <pre><code>// Diziyi yazdırmak için for döngüsü
+let meyveler = ["Elma", "Muz", "Çilek"];
+for (let i = 0; i < meyveler.length; i++) {
+  console.log(meyveler[i]);
+}
+
+// forEach metodu ile dizi üzerinde gezinmek
+meyveler.forEach(function(meyve) {
+  console.log(meyve);
+});
+              </code></pre>
+            </section>
+
+            <a href="d5.html" class="btn btn-secondary mt-3"
+              >Önceki Derse Dön</a
+            >
+            <a href="d7.html" class="btn btn-secondary mt-3"
+              >Sonraki Derse Git</a
+            >
+          </div>
+
+          <!-- Ders İçeriği Menüsü -->
+          <aside class="ml-3" id="content-sidebar">
+            <h3>Ders İçeriği</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#arrays">JavaScript Diziler</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#array-methods">Dizi Metotları ve İşlevleri</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#array-operations">Dizilerle İşlemler</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <p class="text-center">© 2024 Code Okulum</p>
+      </div>
+    </footer>
+
+    <script src="../js/bs/bootstrap.min.js"></script>
+    <script src="../js/custom/script2.js"></script>
+  </body>
+</html>

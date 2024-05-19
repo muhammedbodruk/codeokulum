@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Ders 5 - HTML Formlar</title>
+    <link rel="stylesheet" href="../css/bs/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/custom/style2.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Code Okulum</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Ana Sayfa</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Dersler</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkında</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="theme-toggle">Tema Değiştir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid mt-5">
+      <div class="row">
+        <aside class="col-md-2" id="sidebar">
+          <h3>HTML Müfredatı</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="d1.html">1. HTML'in Tarihi ve Temel Bilgiler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d2.html">2. HTML Temel Etiketler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d3.html">3. HTML Listeler ve Bağlantılar</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d4.html">4. HTML Görseller ve Medya</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d5.html">5. HTML Formlar</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d6.html">6. HTML Tablo ve Veri Görselleştirme</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d7.html">7. HTML5 Yenilikler</a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="col-md-10 d-flex">
+          <div class="flex-grow-1">
+            <h1>HTML Ders 5: HTML Formlar</h1>
+            <p>
+              Bu derste, HTML'de form elemanları hakkında bilgi sahibi
+              olacaksınız.
+            </p>
+
+            <section id="form-basics">
+              <h2>Form Temelleri</h2>
+              <p>
+                HTML formları <code>&lt;form&gt;</code> etiketi ile tanımlanır.
+                İçerisinde çeşitli form elemanları barındırır.
+              </p>
+              <pre><code>&lt;form action="/submit" method="post"&gt;
+  &lt;input type="text" name="isim" placeholder="İsim"&gt;
+  &lt;input type="email" name="email" placeholder="Email"&gt;
+  &lt;button type="submit"&gt;Gönder&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+            </section>
+
+            <section id="input-types">
+              <h2>Giriş Tipleri</h2>
+              <p>
+                Formlarda çeşitli giriş tipleri kullanılabilir. İşte bazıları:
+              </p>
+              <pre><code>&lt;input type="text" name="isim" placeholder="İsim"&gt;
+&lt;input type="password" name="sifre" placeholder="Şifre"&gt;
+&lt;input type="email" name="email" placeholder="Email"&gt;
+&lt;input type="date" name="dogum_tarihi"&gt;</code></pre>
+            </section>
+
+            <a href="d4.html" class="btn btn-secondary mt-3"
+              >Önceki Derse Dön</a
+            >
+            <a href="d6.html" class="btn btn-secondary mt-3"
+              >Sonraki Derse Git</a
+            >
+          </div>
+
+          <aside class="ml-3" id="content-sidebar">
+            <h3>Ders İçeriği</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#form-basics">Form Temelleri</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#input-types">Giriş Tipleri</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <p class="text-center">© 2024 Code Okulum</p>
+      </div>
+    </footer>
+
+    <script src="../js/bs/bootstrap.min.js"></script>
+    <script src="../js/custom/script2.js"></script>
+  </body>
+</html>

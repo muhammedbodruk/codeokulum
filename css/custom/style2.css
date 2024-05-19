@@ -1,0 +1,88 @@
+body {
+  background-color: var(--background-color, #344C64);
+  color: var(--text-color, #F9F7F7);
+}
+
+.header, .footer {
+  background-color: #112D4E;
+  color: #F9F7F7;
+}
+
+.nav-link {
+  color: #F9F7F7;
+}
+
+.nav-link:hover {
+  color: #DBE2EF;
+}
+
+.btn-primary {
+  background-color: #3F72AF;
+  border-color: #3F72AF;
+}
+
+.btn-primary:hover {
+  background-color: #112D4E;
+  border-color: #112D4E;
+}
+
+.btn-secondary {
+  background-color: #DBE2EF;
+  border-color: #DBE2EF;
+  color: #112D4E;
+}
+
+.btn-secondary:hover {
+  background-color: #F9F7F7;
+  border-color: #F9F7F7;
+  color: #112D4E;
+}
+a {
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+#sidebar {
+  background-color: #240750;
+  color: #F9F7F7;
+  padding: 15px;
+}
+
+#sidebar .list-group-item {
+  background-color: #240750;
+  color: #F9F7F7;
+  border: none;
+}
+
+#sidebar .list-group-item:hover {
+  background-color: #112D4E;
+  color: black;
+}
+
+#content-sidebar {
+  background-color: #006769;
+  color: #112D4E;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+#content-sidebar .list-group-item {
+  background-color: #006769;
+  color: #112D4E;
+  border: none;
+}
+
+#content-sidebar .list-group-item:hover {
+  background-color: #F9F7F7;
+  color: #112D4E;
+}
+
+.main-content {
+  display: flex;
+}
+.flex-grow-1 {
+  background-color: #EEF7FF;
+  color: #112D4E;
+}

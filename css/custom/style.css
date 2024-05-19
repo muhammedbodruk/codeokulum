@@ -1,0 +1,94 @@
+body {
+  background-color: #344C64;
+  color: #F9F7F7;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+  background-color: #F9F7F7;
+  color: #344C64;
+}
+
+.header, .footer {
+  background-color: #112D4E;
+  color: #F9F7F7;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode .header, body.light-mode .footer {
+  background-color: #F9F7F7;
+  color: #344C64;
+}
+
+.header .navbar-brand, .header .nav-link {
+  color: #F9F7F7;
+}
+
+body.light-mode .header .navbar-brand, body.light-mode .header .nav-link {
+  color: #344C64;
+}
+
+.header .nav-link:hover {
+  color: #DBE2EF;
+}
+
+body.light-mode .header .nav-link:hover {
+  color: #3F72AF;
+}
+
+.container h1, .container p {
+  text-align: center;
+}
+
+.card {
+  background-color: #DBE2EF;
+  color: #112D4E;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background-color: #3F72AF;
+  color: #F9F7F7;
+}
+
+body.light-mode .card {
+  background-color: #344C64;
+  color: #F9F7F7;
+}
+
+body.light-mode .card:hover {
+  background-color: #112D4E;
+  color: #DBE2EF;
+}
+
+body.light-mode .card .card-title,
+body.light-mode .card .card-text {
+  color: #344C64;
+}
+
+.card .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card .card-body {
+  padding: 20px;
+}
+
+.card .card-title {
+  font-weight: bold;
+}
+
+.card .card-text {
+  margin-bottom: 15px;
+}
+
+.footer {
+  padding: 10px 0;
+}
+
+.footer p {
+  margin: 0;
+}

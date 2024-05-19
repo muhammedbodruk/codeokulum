@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Ders 2 - HTML Temel Etiketler</title>
+    <link rel="stylesheet" href="../css/bs/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/custom/style2.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Code Okulum</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Ana Sayfa</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Dersler</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkında</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="theme-toggle">Tema Değiştir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid mt-5">
+      <div class="row">
+        <aside class="col-md-2" id="sidebar">
+          <h3>HTML Müfredatı</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="d1.html">1. HTML'in Tarihi ve Temel Bilgiler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d2.html">2. HTML Temel Etiketler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d3.html">3. HTML Listeler ve Bağlantılar</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d4.html">4. HTML Görseller ve Medya</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d5.html">5. HTML Formlar</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d6.html">6. HTML Tablo ve Veri Görselleştirme</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d7.html">7. HTML5 Yenilikler</a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="col-md-10 d-flex">
+          <div class="flex-grow-1">
+            <h1>HTML Ders 2: HTML Temel Etiketler</h1>
+            <p>Bu derste, HTML'in temel etiketlerini öğreneceksiniz.</p>
+
+            <section id="headings">
+              <h2>Başlık Etiketleri</h2>
+              <p>
+                HTML'de başlıklar <code>&lt;h1&gt;</code> ile
+                <code>&lt;h6&gt;</code> etiketleri arasında tanımlanır.
+                <code>&lt;h1&gt;</code> en büyük başlığı,
+                <code>&lt;h6&gt;</code> ise en küçük başlığı temsil eder.
+              </p>
+              <pre><code>&lt;h1&gt;Bu bir H1 başlığıdır&lt;/h1&gt;
+&lt;h2&gt;Bu bir H2 başlığıdır&lt;/h2&gt;
+&lt;h3&gt;Bu bir H3 başlığıdır&lt;/h3&gt;
+&lt;h4&gt;Bu bir H4 başlığıdır&lt;/h4&gt;
+&lt;h5&gt;Bu bir H5 başlığıdır&lt;/h5&gt;
+&lt;h6&gt;Bu bir H6 başlığıdır&lt;/h6&gt;</code></pre>
+            </section>
+
+            <section id="paragraphs">
+              <h2>Paragraf Etiketleri</h2>
+              <p>
+                Paragraflar <code>&lt;p&gt;</code> etiketi ile tanımlanır. Her
+                paragraf yeni bir satırda başlar ve genellikle metin blokları
+                içerir.
+              </p>
+              <pre><code>&lt;p&gt;Bu bir paragraftır.&lt;/p&gt;
+&lt;p&gt;Bu başka bir paragraftır.&lt;/p&gt;</code></pre>
+            </section>
+
+            <section id="links">
+              <h2>Bağlantı Etiketleri</h2>
+              <p>
+                Bağlantılar <code>&lt;a&gt;</code> etiketi ile tanımlanır ve
+                <code>href</code> özelliği ile bağlantının yönlendirileceği
+                adres belirtilir.
+              </p>
+              <pre><code>&lt;a href="https://www.example.com"&gt;Bu bir bağlantıdır&lt;/a&gt;</code></pre>
+            </section>
+
+            <section id="images">
+              <h2>Görsel Etiketleri</h2>
+              <p>
+                Görseller <code>&lt;img&gt;</code> etiketi ile tanımlanır ve
+                <code>src</code> özelliği ile görselin kaynak dosyası
+                belirtilir. <code>alt</code> özelliği, görselin yüklenememesi
+                durumunda gösterilecek alternatif metni belirtir.
+              </p>
+              <pre><code>&lt;img src="image.jpg" alt="Örnek Görsel"&gt;</code></pre>
+            </section>
+
+            <a href="d1.html" class="btn btn-secondary mt-3"
+              >Önceki Derse Dön</a
+            >
+            <a href="d3.html" class="btn btn-secondary mt-3"
+              >Sonraki Derse Git</a
+            >
+          </div>
+
+          <aside class="ml-3" id="content-sidebar">
+            <h3>Ders İçeriği</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#headings">Başlık Etiketleri</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#paragraphs">Paragraf Etiketleri</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#links">Bağlantı Etiketleri</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#images">Görsel Etiketleri</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <p class="text-center">© 2024 Code Okulum</p>
+      </div>
+    </footer>
+
+    <script src="../js/bs/bootstrap.min.js"></script>
+    <script src="../js/custom/script2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Ders 10 - Hatalar ve Hata Yönetimi</title>
+    <link rel="stylesheet" href="../css/bs/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/custom/style2.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Code Okulum</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Ana Sayfa</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Dersler</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkında</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="theme-toggle">Tema Değiştir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid mt-5">
+      <div class="row">
+        <aside class="col-md-2" id="sidebar">
+          <h3>JavaScript Müfredatı</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="d1.html">1. JavaScript'in Tarihi ve Temel Bilgiler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d2.html"
+                >2. JavaScript'in Siteye Eklenmesi ve Temel Kurallar</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="d3.html">3. JavaScript Değişkenler ve Veri Türleri</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d4.html"
+                >4. JavaScript Operatörler ve Koşullu İfadeler</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a href="d5.html">5. JavaScript Döngüler ve Fonksiyonlar</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d6.html">6. JavaScript Diziler ve Dizi İşlemleri</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d7.html">7. JavaScript Obje Yapısı ve JSON</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d8.html">8. JavaScript DOM Manipülasyonu</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d9.html">9. JavaScript Etkinlikler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d10.html">10. JavaScript Hatalar ve Hata Yönetimi</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d11.html">11. JavaScript Asenkron Programlama</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d12.html">12. JavaScript Modern ES6+ Özellikleri</a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="col-md-10 d-flex">
+          <div class="flex-grow-1">
+            <h1>JavaScript Ders 10: Hatalar ve Hata Yönetimi</h1>
+            <p>
+              Bu derste, JavaScript'te hata yönetimi ve hata yakalama konularını
+              öğreneceksiniz.
+            </p>
+
+            <section id="error-handling">
+              <h2>Hata Yönetimi</h2>
+              <p>
+                JavaScript'te hata yönetimi, hataları tanımlama ve bu hataları
+                yakalama sürecidir. Hataları yakalamak için try-catch-finally
+                yapısı kullanılır:
+              </p>
+              <pre><code>try {
+  // Hata oluşturabilecek kod
+  let result = riskyOperation();
+} catch (error) {
+  // Hata yakalandığında yapılacak işlemler
+  console.error("Bir hata oluştu:", error);
+} finally {
+  // Her durumda çalıştırılacak kod
+  console.log("İşlem tamamlandı.");
+}</code></pre>
+            </section>
+
+            <section id="throwing-errors">
+              <h2>Hata Fırlatma</h2>
+              <p>
+                Kendi hatalarınızı oluşturmak ve fırlatmak için throw ifadesini
+                kullanabilirsiniz:
+              </p>
+              <pre><code>function checkAge(age) {
+  if (age < 18) {
+    throw new Error("Yaş 18'den küçük olamaz!");
+  }
+  return true;
+}
+
+try {
+  checkAge(15);
+} catch (error) {
+  console.error("Hata:", error.message);
+}</code></pre>
+            </section>
+
+            <a href="d9.html" class="btn btn-secondary mt-3"
+              >Önceki Derse Dön</a
+            >
+            <a href="d11.html" class="btn btn-secondary mt-3"
+              >Sonraki Derse Git</a
+            >
+          </div>
+
+          <aside class="ml-3" id="content-sidebar">
+            <h3>Ders İçeriği</h3>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#error-handling">Hata Yönetimi</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#throwing-errors">Hata Fırlatma</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <p class="text-center">© 2024 Code Okulum</p>
+      </div>
+    </footer>
+
+    <script src="../js/bs/bootstrap.min.js"></script>
+    <script src="../js/custom/script2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Ders 4 - HTML Görseller ve Medya</title>
+    <link rel="stylesheet" href="../css/bs/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/custom/style2.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Code Okulum</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Ana Sayfa</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Dersler</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hakkında</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">İletişim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="theme-toggle">Tema Değiştir</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid mt-5">
+      <div class="row">
+        <aside class="col-md-2" id="sidebar">
+          <h3>HTML Müfredatı</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="d1.html">1. HTML'in Tarihi ve Temel Bilgiler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d2.html">2. HTML Temel Etiketler</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d3.html">3. HTML Listeler ve Bağlantılar</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d4.html">4. HTML Görseller ve Medya</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d5.html">5. HTML Formlar</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d6.html">6. HTML Tablo ve Veri Görselleştirme</a>
+            </li>
+            <li class="list-group-item">
+              <a href="d7.html">7. HTML5 Yenilikler</a>
+            </li>
+          </ul>
+        </aside>
+
+        <div class="col-md-10 d-flex">
+          <div class="flex-grow-1">
+            <h1>HTML Ders 4: HTML Görseller ve Medya</h1>
+            <p>
+              Bu derste, HTML'de görseller ve medya içerikleri hakkında bilgi
+              sahibi olacaksınız.
+            </p>
+
+            <section id="images">
+              <h2>Görseller</h2>
+              <p>
+                Görseller <code>&lt;img&gt;</code> etiketi ile sayfaya eklenir.
+                <code>src</code> ve <code>alt</code> özellikleri kullanılır.
+              </p>
+              <pre><code>&lt;img src="gorsel.jpg" alt="Örnek Görsel"&gt;</code></pre>
+            </section>
+
+            <section id="audio">
+              <h2>Ses Dosyaları</h2>
+              <p>
+                Ses dosyaları <code>&lt;audio&gt;</code> etiketi ile eklenir.
+                <code>controls</code> özelliği ile oynatıcı kontrolleri
+                gösterilir.
+              </p>
+              <pre><code>&lt;audio controls&gt;
+  &lt;source src="ses.mp3" type="audio/mpeg"&gt;
+  Tarayıcınız bu ses dosyasını desteklemiyor.
+&lt;/audio&gt;</code></pre>
+            </section>
+
+            <section id="video">
+              <h2>Videolar</h2>
+              <p>
+                Videolar <code>&lt;video&gt;</code> etiketi ile eklenir.
+                <code>controls</code> ve <code>src</code> özellikleri
+                kullanılır.
+              </p>
+              <pre><code>&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  Tarayıcınız bu video dosyasını desteklemiyor.
+&lt;/video&gt;</code></pre>
+            </section>
+
+            <a href="d3.html" class="btn btn-secondary mt-3"
+              >Önceki Derse Dön</a
+            >
+            <a href="d5.html" class="btn btn-secondary mt-3"
+              >Sonraki Derse Git</a
+            >
+          </div>
+
+          <aside class="ml-3" id="content-sidebar">
+            <h3>Ders İçeriği</h3>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="#images">Görseller</a></li>
+              <li class="list-group-item">
+                <a href="#audio">Ses Dosyaları</a>
+              </li>
+              <li class="list-group-item"><a href="#video">Videolar</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-5">
+      <div class="container">
+        <p class="text-center">© 2024 Code Okulum</p>
+      </div>
+    </footer>
+
+    <script src="../js/bs/bootstrap.min.js"></script>
+    <script src="../js/custom/script2.js"></script>
+  </body>
+</html>
